@@ -60,6 +60,16 @@ input {
   color: var(--screen-dark);
 }
 
+@media (min-aspect-ratio: 1/1) {
+  p {
+    font-size: clamp(2px, 1.4vh, 11px);
+  }
+
+  input {
+    font-size: clamp(0.4ch, 4vh, 2ch);
+  }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
